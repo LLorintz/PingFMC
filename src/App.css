@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+    padding:50px;
+}
+
+.heading h1{
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    padding: 50px 0 30px;
+}
+
+.heading h1 span{
+    font-weight: 700;
+    
+}
+
+.heading p{
+    color: hsl(0, 0%, 59%);
+    font-size: 1.1rem;
+    padding-bottom: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.form-control{
+    width: 300px;
+    margin: auto;
+}
+
+.form-control input{
+    margin-bottom: 10px;
+    width: 100%;
+    padding:8px;
+    font-family: inherit;
+    font-size: 16px;
+    color: hsl(223, 100%, 88%);
+    border: 2px solid hsl(223, 100%, 88%);
+    border-radius: 30px;
+    outline:none;
+}
+
+.form-control input::placeholder{
+    color: hsl(223, 100%, 88%);;
+}
+
+.form-control button{
+    width: 100%;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-family: inherit;
+    padding: 8px;
+    border: 2px solid hsl(223, 87%, 63%);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+
+.form-control button:hover{
+    background-color: transparent;
+    color: hsl(223, 87%, 63%);
+}
+
+.showcase{
+    padding: 50px 20px;
+
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer ul li{
+    margin: 0 20px;
+}
+
+footer ul li a{
+    color: hsl(223, 87%, 63%);
+}
+
+.footer p{
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+@media(min-width: 700px){
+    .heading h1{
+     font-size: 36px;
+    }
+
+    .form-control{
+        width:auto;
+    }
+
+    .form-control input, 
+    .form-control button{
+        width: auto;
+        padding: 8px;
+    }
+    .form-control button{
+        width: 150px;
+    }
+}
